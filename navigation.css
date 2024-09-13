@@ -1,0 +1,77 @@
+/* .navigation li{
+    position: relative;
+    list-style: none;
+    width: 20px;
+    margin: 0 5 px;
+    display: inline-block;
+}
+
+.navigation li::before{
+    content: "fdfdfdf";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    background: #222;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.navigation .active::before{
+    background: #0f0;
+    box-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0 , 0 0 30px #0f0, 0 0 40px #0f0, 0 0 50px #0f0;
+
+} */
+
+.centered-container {
+    width: 800px;  /* Fixed width */
+    height: 600px; /* Fixed height */
+    background-color: rgba(255, 255, 255, 0.8); /* Background with opacity */
+    position: absolute; /* Positioning the container absolutely */
+    top: 50%; /* Move it halfway down the page */
+    left: 50%; /* Move it halfway across the page */
+    transform: translate(-50%, -50%); /* Adjusts position to truly center it */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for better visibility */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    text-align: center;
+}
+*{
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid #000; */
+}
+
+body{
+    background-image: url('assets/png/Food_C_B103_1004200750.jpg');
+    width: 1500px; height:710px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin: auto;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.27);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    text-align: center;
+}
+

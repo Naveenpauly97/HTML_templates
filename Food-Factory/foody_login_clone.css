@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('/assets/png/Food_C_B103_1004200750.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-color: rgb(8, 13, 11); */
+}
+
+.container{
+    /* border: 1px solid #ccc;; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+.login-box{
+    padding: 30px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: #ffffff5b;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 4px 25px #181818;
+}
+
+.login-box h2{
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.login-box p{
+    font-size: 25px;
+    padding: 20px 0;
+    font-weight: 200;
+    color: #000000;
+}
+.input-group{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.input-box-group{
+    position: relative;
+}
+  .input-box-group input:focus{
+    background-color: #a09a9a1a;
+    background-size: 10px;
+    border: 1px solid #000;
+}   
+
+.input-box-group i{
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    border-top: 1px solid #00000048;
+    border-bottom: 1px solid #00000048;
+    border-left: 1px solid #00000048;
+    border-radius: 2px;
+    transform: translateY(-50%);
+}
+
+.input-box-group input{
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    background-color: #dbd5d532;
+    color: #000000;
+    font-size: 20px;
+}
+
+::placeholder { 
+    color: rgba(1, 1, 1, 0.769);
+  }
+
+
+
+/* #email-id, #password-id{
+    width: 100%;
+    padding: 10px 0 10px 35px;
+}
+
+.input-box-group i{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+} */

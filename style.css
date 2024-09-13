@@ -1,0 +1,73 @@
+body * {
+    border: 2px solid black;
+    padding: 30px;
+}
+div{
+    background-color: rgb(79, 209, 10);
+}
+header p{
+    background-color: rgb(255, 5, 5);
+}
+footer{
+    background-color: rgb(243, 81, 81);
+}
+section{
+    background-color: rgb(241, 15, 233);
+}
+article{
+    background-color: rgb(35, 38, 236);
+}
+main ,address{
+    background-color: rgb(255, 251, 4);
+}
+p{
+    background-color: rgb(1, 74, 25);
+}
+span{
+    background-color: rgb(200, 123, 8);
+}
+:root{
+    --container-color-blue:rgb(125, 97, 235);
+}
+
+li{
+    background-color: var(--container-color-blue);
+}
+ul li{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+address img{
+    background-image: url("https://img.freepik.com/premium-photo/mountain-hill-fantasy-scenery-wallpaper-image-ai-generated-art_856480-1223.jpg?w=1060");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 200px;
+    transition: background-image1s ease, width 0.5s ease-in-out , height 1s ease-in-out;
+}
+img:hover{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/029/499/304/large_2x/ai-generated-ai-generative-snow-ice-faded-mountain-hill-peak-nature-outdoor-landscape-background-graphic-art-photo.jpg");
+    width: 25%;
+    height: 150px;
+}
+article p:before{
+    padding: 0;
+    content: " ✓";
+    font-size: xx-large;
+    color: green;
+}
+.section-1.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    transition-property: all; 
+    transition-duration: 1s;
+    transition-delay: 0s;
+     transition-timing-function: ease-in-out;
+}
+
+.section-1.box:hover {
+    width: 200px;
+    height: 200px;
+    background-color: blue; /* Will not transition because it's not specified */
+}

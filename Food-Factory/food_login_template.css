@@ -1,0 +1,136 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+}
+
+/* Background for the whole body */
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    background-image: url('/assets/png/Food_C_B103_1004200750.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the login box */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* background-color: brown; */
+}
+
+/* Styling for the login box */
+.login-box {
+    padding: 30px;
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.27);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    /* text-align: center; */
+}
+
+/* Header text */
+.login-box h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.login-box p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #007BFF;
+} */
+
+/* Options styling */
+/* .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+} */
+
+/* .options label {
+    font-size: 12px;
+} */
+
+/* .forgot-password {
+    font-size: 12px;
+    color: #f9f9f9;
+    text-decoration: none;
+} */
+
+/* Button styling */
+/* .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+} */
+
+/* .btn:hover {
+    background-color: #218838;
+} */
+
+/* Create account link */
+/* .create-account {
+    margin-top: 20px;
+    font-size: 12px;
+} */
+
+/* .create-account a {
+    color: #007BFF;
+    text-decoration: none;
+} */

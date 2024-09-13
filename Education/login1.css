@@ -1,0 +1,208 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "popins",sans-serif;
+    
+}
+
+body{
+    background-color: #2d2d2d;
+}
+
+.bacground-img{
+    position: absolute;
+    left: 10%;
+    width: 600px;
+    height: 700px;
+    margin: 2% 50% 0 25%;
+    justify-items: center;
+    justify-self: center;
+    padding-top: 100px;
+    background-image: url('png/mountain_robot.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    z-index: +1;
+}
+
+.circle:nth-of-type(2){
+    width: 15%;
+    height: 31%;
+    /* background: linear-gradient(#f73194,#e52320); */
+    background: linear-gradient(to bottom ,#fb00ff, #ff0000);
+    /* border-radius: 50%; */
+    /* position:  absolute; */
+    left: 5%;
+    bottom: 5%;
+}
+
+.circle:nth-of-type(3){
+    width: 8%;
+    height: 16%;
+    background: linear-gradient(to bottom,#00ffddb4,#37ff00c1);
+    /* border-radius: 50%; */
+    /* position:  absolute; */
+    right: 30%;
+    bottom: 20%;
+}
+.circle:nth-of-type(4){
+    width: 18%;
+    height: 35%;
+    /* background: linear-gradient(#2caf2a,#e0e016); */
+    background: linear-gradient(to bottom,#62ff00,#fff200);
+    /* border-radius: 50%; */
+    /* position:  absolute; */
+    top: 8%;
+    right: 4%;
+}
+.circle:nth-of-type(5){
+    width: 10%;
+    height: 20%;
+    /* background: linear-gradient(#2a2ddc,#2fc5e0); */
+    background: linear-gradient(to bottom,#00fbe2cd,#00a6ff);
+    /* border-radius: 50%; */
+    /* position:  absolute; */
+    top: 11%;
+    left: 8%;
+}
+.wrapper{
+    z-index: +1;
+    width: 80%;
+    height: 80%;
+    /* width: 860px;
+    height: 460px; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter:blur(10px) ;
+    border: 1px solid #fff;
+    background: #fff7f715;
+    border-radius: 3% 3% 3% 3% / 6% 6% 6% 6%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 25px #00000044,-10px -10px 25px #00000044;
+
+    /* border-top-left-radius: 3% 6%;
+    border-top-right-radius: 3% 6%;
+    border-bottom-right-radius: 3% 6%;
+    border-bottom-left-radius: 3% 6%; */
+
+    /*border-radius: horizontal_top_left horizontal_top_right horizontal_bottom_right horizontal_bottom_left / vertical_top_left vertical_top_right vertical_bottom_right vertical_bottom_left;*/
+}
+
+.header{
+    position: relative;
+    top: 50px;
+    display: flex;
+    color: #ffffff;
+}
+
+.header .logo{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 60px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.logo b {
+    font-weight: 32px;
+}
+
+.header ul{
+    display:flex;
+    position: absolute;
+    right: 120px;
+}
+
+.header ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 25px;
+    /* border: 1px solid #000; */
+    cursor: pointer;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 25px;
+    /* letter-spacing: 1px; */
+}
+
+.login-btn{
+    background-color: #000;
+    border-radius:50px;
+    box-shadow: 6px 6px 15px #0000002b;
+}
+
+.section1{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: #fff;
+    width: 300px;
+}
+.section1 h2{
+    font-size: 46px;
+}
+
+.section1 span{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.section1 p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    position: relative;
+    top: 15px;
+}
+
+.section1 button {
+    border: 0;
+    outline: 0;
+    font-size: 35px;
+    font-weight: 400;
+    padding: 10px 30px;
+    background-color: #000;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+.section2 img{
+    width: 500px;
+    /* border: 1px solid #000; */
+    position: relative;
+    right: 150px;
+    top: 70px;
+    float: right;
+}
+
+ .wrapper ul{
+    /* display: flex;
+    position: absolute;
+    right: 22%;
+    margin: 3% 10% 0 0;
+    color: white;
+    border: 1px solid  black; */
+    /* padding: 50px; */
+}
+
+ ul li{
+    /* display: flex; */
+    /* padding: 0 30px 0 30px; */
+    /* list-style: none; */
+    /* align-items: center; */
+}  
