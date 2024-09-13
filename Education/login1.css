@@ -21,7 +21,7 @@ body{
     justify-items: center;
     justify-self: center;
     padding-top: 100px;
-    background-image: url('png/mountain_robot.png');
+    background-image: url('../assets/png/mountain_robot.png');
     background-size: cover;
     background-position: center;
 }
