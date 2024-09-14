@@ -10,7 +10,7 @@
 body {
     font-family: 'Arial', sans-serif;
     height: 100vh;
-    background-image: url('/assets/png/Food_C_B103_1004200750.jpg');
+    background-image: url('../assets/png/Food_C_B103_1004200750.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
