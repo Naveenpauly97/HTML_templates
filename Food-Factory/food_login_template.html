@@ -21,11 +21,12 @@
                     </div>
                 </div>
 
-                <div class="input-group">
+                <div class="input-group" >
                     <label for="password">Your Password</label>
                     <div class="input-icon">
                         <i class="fas fa-lock"></i>
                         <input type="password" id="password" placeholder="Password" required>
+                       <i id="toggle-eye" class="fas fa-eye-slash" onclick="this.classList.toggle('fa-eye'); this.classList.toggle('fa-eye-slash'); document.getElementById('password').type = this.classList.contains('fa-eye') ?'text':'password';"></i>
                     </div>
                 </div>
 
@@ -34,10 +35,18 @@
                     <a href="#" class="forgot-password">Lost password?</a>
                 </div>
 
-                <button type="submit" class="btn">Sign in</button>
+                <button type="submit"  class="btn">Sign in</button>
             </form>
             <p class="create-account">No account? <a href="#">Create account</a></p>
         </div>
     </div>
+
+    <script>
+    //     const toggle = () => {
+    //        const togle = document.getElementById('toggle-eye');
+    //        togle.classList.toggle('fa-eye-slash');
+    //        togle.classList.toggle('fa-eye');
+    //     }
+    // </script>
 </body>
 </html>

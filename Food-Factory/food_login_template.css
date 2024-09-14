@@ -10,7 +10,7 @@
 body {
     font-family: 'Arial', sans-serif;
     height: 100vh;
-    background-image: url('../assets/png/Food_C_B103_1004200750.jpg');
+    background-image: url('/assets/png/Food_C_B103_1004200750.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -68,7 +68,7 @@ body {
     position: relative;
 }
 
-.input-icon i {
+.fa-lock,.fa-envelope {
     position: absolute;
     left: 10px;
     top: 50%;
@@ -76,40 +76,41 @@ body {
 }
 
 input[type="email"],
-input[type="password"] {
+#password {
     width: 100%;
     padding: 10px 10px 10px 40px;
-    border: 1px solid #cccccc;
+    border: 1px solid #cccccc27;
     border-radius: 5px;
     font-size: 14px;
+    background-color: rgba(240, 248, 255, 0.091);
 }
 
-/* input[type="email"]:focus,
+input[type="email"]:focus,
 input[type="password"]:focus {
     outline: none;
     border-color: #007BFF;
-} */
+}
 
 /* Options styling */
-/* .options {
+.options {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-} */
+}
 
-/* .options label {
+.options label {
     font-size: 12px;
-} */
+}
 
-/* .forgot-password {
+.forgot-password {
     font-size: 12px;
     color: #f9f9f9;
     text-decoration: none;
-} */
+}
 
 /* Button styling */
-/* .btn {
+.btn {
     width: 100%;
     padding: 12px;
     background-color: #28a745;
@@ -118,19 +119,37 @@ input[type="password"]:focus {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-} */
+}
 
-/* .btn:hover {
+.btn:hover {
     background-color: #218838;
-} */
+}
 
 /* Create account link */
-/* .create-account {
+.create-account {
     margin-top: 20px;
     font-size: 12px;
-} */
+}
 
-/* .create-account a {
+.create-account a {
     color: #007BFF;
     text-decoration: none;
-} */
+}
+
+
+#toggle-eye{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    right: 10px;
+    /* padding: 50px; */
+}
+
+/*
+
+onclick="() => {
+                        const togle = document.getElementById('toggle-eye');
+                        togle.classList.toggle('fa-eye-slash');
+                        togle.classList.toggle('fa-eye');
+                     }"
+*/

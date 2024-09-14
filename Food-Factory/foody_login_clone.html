@@ -25,15 +25,18 @@
                     <div class="input-box-group">
                         <i class="fas fa-lock"></i>
                         <input type="password" name="password" id="password-id" placeholder="Password">
+                        <i class="fas fa-eye-slash" id="toggle" onclick="this.classList.toggle('fa-eye-slash'); this.classList.toggle('fa-eye'); document.getElementById('password-id').type = this.classList.contains('fa-eye')?'text':'password'"></i>
                     </div>
                 </div>
                 <div class="input-option">
                     <div class="option1">
-                        <input type="checkbox" name="remember-me" id="remember-me">
-                        <span>Remember me</span>
+                        <div class="align-left">
+                            <input type="checkbox" name="remember-me" id="remember-me">
+                            <span>Remember me</span>
+                        </div>
                         <a href="#">Lost password?</a>
                     </div>
-                    <input type="button" value="Login-in">
+                    <input type="button" value="Log-in">
                 </div>
             </form>
             <p class="navigate-signin">
@@ -42,5 +45,6 @@
             </p>
         </div>
     </div>
+    
 </body>
 </html>
