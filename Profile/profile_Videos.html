@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-left">
+            <h1>Photogram</h1>
+        </div>
+        <div class="header-center">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="header-right">
+            <button class="close-btn">&times;</button>
+        </div>
+    </header>
+    <div class="profile-container">
+        <!-- Sidebar with Profile Info -->
+        <div class="sidebar">
+            <div class="profile-pic"></div>
+            <h2 id="resolution">Bio Bio</h2>
+            <article class="bio-container">
+                <h3 id="h3-content">Daily Quote here</h3>   
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus iure ut commodi tenetur voluptatem fugit temporibus nulla, praesentium veritatis assumenda.</p>
+            </article>
+        </div>
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Tabs -->
+            <div class="tabs">
+                <a href="#" class="tab">Photos</a>
+                <a href="#" class="tab active">Videos</a>
+                <a href="#" class="tab">Account</a>
+                <!-- <a href="#" class="tab">Instagram</a> -->
+            </div>
+
+           <div class="child-content">
+            <div class="container" id="myGrid">
+                <div class="item"> 
+                    <img id="myImage"  src="https://naveenpauly97.github.io/HTML_templates/assets/png/Food_C_B103_1004200750.jpg" alt="Food Image 1">
+                </div>
+                <div class="item ">
+                    <img  src="https://naveenpauly97.github.io/HTML_templates/assets/png/mountain_robot.png" alt="Mountain Robot">
+                </div>
+                <div class="item "> 
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/mountain_robot.png" alt="Mountain Robot">
+                </div>
+                <div class="item"> 
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/Food_C_B103_1004200750.jpg" alt="Food Image 2">
+                </div>
+                <div class="item"> 
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/transparent-transformer-robot-robot-robot-alien-futuristic-64804515d467d4.08246178168612789387.png" alt="Food Image 3">
+                </div>
+                <div class="item"> 
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/Food_C_B103_1004200750.jpg" alt="Food Image 4">
+                </div>
+                <div class="item"> 
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/mountain_robot.png" alt="Mountain Robot">
+                </div>
+                <!-- <div class="item"> item8
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/Food_C_B103_1004200750.jpg" alt="Food Image 5">
+                </div>
+                <div class="item"> item9
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/Food_C_B103_1004200750.jpg" alt="Food Image 6">
+                </div>
+                <div class="item">item10
+                    <img  src="https://naveenpauly97.github.io/HTML_templates/assets/png/transparent-transformer-robot-robot-robot-alien-futuristic-64804515d467d4.08246178168612789387.png" alt="Mountain Robot">
+                </div>
+                <div class="item">item11
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/mountain_robot.png" alt="Mountain Robot">
+                </div>
+                <div class="item">item12
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/Food_C_B103_1004200750.jpg" alt="Food Image 5">
+                </div>
+                <div class="item">item13
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/Food_C_B103_1004200750.jpg" alt="Food Image 6">
+                </div>
+                <div class="item">item14
+                    <img  src="https://naveenpauly97.github.io/HTML_templates/assets/png/transparent-transformer-robot-robot-robot-alien-futuristic-64804515d467d4.08246178168612789387.png" alt="Mountain Robot">
+                </div>
+                <div class="item">item15
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/mountain_robot.png" alt="Mountain Robot">
+                </div>
+                <div class="item">item16
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/Food_C_B103_1004200750.jpg" alt="Food Image 5">
+                </div>
+                <div class="item">item17
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/Food_C_B103_1004200750.jpg" alt="Food Image 6">
+                </div>
+                <div class="item">item18
+                    <img  src="https://naveenpauly97.github.io/HTML_templates/assets/png/transparent-transformer-robot-robot-robot-alien-futuristic-64804515d467d4.08246178168612789387.png" alt="Mountain Robot">
+                </div>
+                <div class="item">item19
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/mountain_robot.png" alt="Mountain Robot">
+                </div>
+                <div class="item">item20
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/Food_C_B103_1004200750.jpg" alt="Food Image 5">
+                </div>
+                <div class="item">item21
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/Food_C_B103_1004200750.jpg" alt="Food Image 6">
+                </div>
+                <div class="item">item22
+                    <img  src="https://naveenpauly97.github.io/HTML_templates/assets/png/transparent-transformer-robot-robot-robot-alien-futuristic-64804515d467d4.08246178168612789387.png" alt="Mountain Robot">
+                </div>
+                <div class="item">item23
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/mountain_robot.png" alt="Mountain Robot">
+                </div>
+                <div class="item">item24
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/Food_C_B103_1004200750.jpg" alt="Food Image 5">
+                </div>
+                <div class="item">item25
+                    <img src="https://naveenpauly97.github.io/HTML_templates/assets/png/Food_C_B103_1004200750.jpg" alt="Food Image 6">
+                </div> -->
+            </div>
+           </div>
+        </div>
+    </div>
+<script>
+  const img = document.getElementById('myImage');
+
+  // Wait for the image to load before accessing its dimensions
+  img.onload = function() {
+    let width = img.naturalWidth ;
+    const height = img.naturalHeight;
+
+    // width = (width / height) > 1;
+
+    const grid = document.getElementById('myGrid');
+    const computedStyle = getComputedStyle(grid);
+    const rows = computedStyle.gridTemplateRows.split(' ').length;
+  let columns = computedStyle.gridTemplateColumns.split(' ').length;
+  document.getElementById('h3-content').innerText = `Grid has ${rows} rows and ${columns} columns.`;
+
+    document.getElementById('resolution').innerText = `Resolution: ${width} x ${height}`;
+
+    const row = 2;
+    const column = 4;
+    columns = 5;
+    const index = (row * columns ) - (columns-column); // 4 columns per row,   1-based index
+  
+    const gridItem = myGrid.querySelector(`.item:nth-child(15)`);
+  
+  // Display the content of the element
+  document.getElementById('h3-content').innerText = `Element in 3rd row, 1st column is: ${gridItem.textContent}`;
+  };
+</script>
+</body>
+
+</html>

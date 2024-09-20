@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-left">
+            <h1>Photogram</h1>
+        </div>
+        <!-- <div class="header-center">
+            <input type="text" placeholder="Search">
+        </div> -->
+        <div class="header-right">
+            <button class="close-btn">&times;</button>
+        </div>
+    </header>
+    <div class="profile-container">
+        <!-- Sidebar with Profile Info -->
+        <div class="sidebar">
+            <div class="profile-pic"></div>
+            <h2>Bio Bio</h2>
+             <!-- Update Section -->
+             <div class="update-section">
+                <h3>Update your info</h3>
+                <form id="update-form">
+                    <label for="dob">Date of Birth (DOB)</label>
+                    <input type="date" id="dob" name="dob">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+
+            <!-- <div class="profile_top_container">
+                <div class="update-section">
+                    <h3>Update your info</h3>
+                    <form id="update-form">
+                        <label for="dob">Date of Birth (DOB)</label>
+                        <input type="date" id="dob" name="dob">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                        <button type="submit">Save</button>
+                    </form>
+                </div>
+            </div> -->
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <a href="#" class="tab active">Photos</a>
+                <a href="#" class="tab">Videos</a>
+                <a href="#" class="tab">Account</a>
+                <!-- <a href="#" class="tab">Instagram</a> -->
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="gallery">
+                <!-- Add your images in a grid -->
+                <div class="gallery-grid">
+                    <img src="https://via.placeholder.com/150" alt="Image 1">
+                    <img src="https://via.placeholder.com/150" alt="Image 2">
+                    <img src="https://via.placeholder.com/150" alt="Image 3">
+                    <img src="https://via.placeholder.com/150" alt="Image 4">
+                    <img src="https://via.placeholder.com/150" alt="Image 5">
+                    <img src="https://via.placeholder.com/150" alt="Image 6">
+                    <img src="https://via.placeholder.com/150" alt="Image 7">
+                    <img src="https://via.placeholder.com/150" alt="Image 8">
+                    <img src="https://via.placeholder.com/150" alt="Image 9">
+                    <img src="https://via.placeholder.com/150" alt="Image 9">
+                    <img src="https://via.placeholder.com/180" alt="Image 9">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+
+</html>

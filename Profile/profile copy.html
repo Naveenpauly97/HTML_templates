@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #E7E9EB;
+    }
+
+    #myGrid {
+      display: grid;
+      gap: 10px;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
+    /* Custom classes to span grid items */
+    .span2 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Dynamic Perfect Square Grid</h1>
+
+<div id="myGrid">
+  <!-- JavaScript will populate items here -->
+</div>
+
+<script>
+  const myGrid = document.getElementById('myGrid');
+
+  // Example of dynamic item count (you can replace this with dynamic data)
+  const itemCount = 1; // Adjust this number to test different cases
+  
+  // Function to create grid items
+  function createGridItems(count) {
+    for (let i = 1; i <= count; i++) {
+      const gridItem = document.createElement('div');
+      gridItem.classList.add('grid-item');
+      gridItem.textContent = i;
+      myGrid.appendChild(gridItem);
+    }
+
+    adjustGrid(count);
+  }
+
+  // Adjust grid layout based on the item count
+  function adjustGrid(count) {
+    // Find the smallest perfect square greater than or equal to itemCount
+    const columns = Math.ceil(Math.sqrt(count)); // Calculate the number of columns/rows for a square grid
+    const totalCells = columns * columns; // Total cells in the grid (perfect square)
+    
+    myGrid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+    myGrid.style.gridTemplateRows = `repeat(${columns}, 1fr)`;
+
+    const emptySpaces = totalCells - count; // Calculate remaining spaces
+
+    // If there are empty spaces, make the last item span to fill those spaces
+    if (emptySpaces > 0) {
+      const items = myGrid.querySelectorAll('.grid-item');
+      const lastItem = items[items.length - 1];
+      
+      // If only 1 empty space, let the last item span 2 rows or columns
+      if (emptySpaces === 1) {
+        lastItem.classList.add('span2');
+      }
+    }
+  }
+
+  // Call the function with the dynamic item count
+  createGridItems(itemCount);
+</script>
+
+</body>
+</html>
